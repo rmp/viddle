@@ -1,22 +1,25 @@
 {
-  "name": "electron-quick-start",
+  "name": "viddle",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
-  "main": "main.js",
+  "description": "The Amazing Video Fetcher",
   "scripts": {
-    "start": "electron ."
+      "start": "electron .",
+      "setup": "yarn install && cd app && yarn install",
+      "build-win": "yarn setup && electron-packager app \"The Amazing Video Fetcher\" --platform=win32",
+      "build-mac": "yarn setup && electron-packager app \"The Amazing Video Fetcher\" --platform=darwin",
+      "pkg-win": "yarn build-win && node installer"
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
+      "Electron",
+      "Vimeo",
+      "Youtube",
+      "ffmpeg"
   ],
   "author": "GitHub",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^1.8.4"
+    "electron-packager": "^12.2.0",
+    "electron-wix-msi": "^2.1.1"
   }
 }
