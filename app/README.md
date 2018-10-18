@@ -8,7 +8,7 @@ Viddle is an Electron wrapper around the amazing youtube-dl and ffmpeg tools whi
 
 - Viddle is a desktop app!
 - Viddle supports youtube-dl/ffmpeg's video transcoding so you can save as mp4 instead of webm!
-- Viddle supports extracting the audio track from a video download and saving in ffmpeg supported formats (e.g. mp3)
+- Viddle supports extracting the audio track from a video download and saving in ffmpeg supported formats (e.g. mp3)!
 
 ## Building ##
 
