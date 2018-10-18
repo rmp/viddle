@@ -1,15 +1,14 @@
 {
-  "name": "viddle",
+  "name": "viddle-packager",
   "version": "1.0.0",
-  "description": "The Amazing Video Fetcher",
+  "description": "Viddle: The Amazing Video Fetcher",
   "scripts": {
-      "start": "electron .",
       "setup": "yarn install && cd app && yarn install",
-      "build-win": "yarn setup && electron-packager app \"The Amazing Video Fetcher\" --platform=win32",
-      "build-mac": "yarn setup && electron-packager app \"The Amazing Video Fetcher\" --platform=darwin",
+      "build-win": "yarn setup && electron-packager app \"Viddle\" --platform=win32",
+      "build-mac": "yarn setup && electron-packager app \"Viddle\" --platform=darwin",
       "pkg-win": "yarn build-win && node installer"
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/rmp/viddle.git",
   "keywords": [
       "Electron",
       "Vimeo",
